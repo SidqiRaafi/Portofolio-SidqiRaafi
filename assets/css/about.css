@@ -1,0 +1,260 @@
+/* ================================
+        VARIABEL WARNA & TEMA
+   ================================ */
+:root {
+    --bg-primary: #0D0A1B;
+    --card-bg: #181624;
+    --chip-bg: #A855F7;
+    --yellow: #FBBF24;
+    --primary-text: #FAFAFA;
+    --secondary-text: #0D0A1B;
+    --card-radius: 36px;
+}
+
+/* ================================
+        RESET BODY & LAYOUT DASAR
+   ================================ */
+body {
+    background: url("../images/background.jpg") center/cover no-repeat, var(--bg-primary);
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Inter', 'Poppins', Arial, sans-serif;
+}
+
+/* ================================
+        CONTAINER UTAMA ABOUT PAGE
+   ================================ */
+.about-main {
+    margin: 40px auto 0 auto;
+    max-width: 1620px;
+    padding: 0 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ================================
+        BAGIAN ATAS: GRID 2 KOLOM
+   ================================ */
+.about-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* ================================
+        KARTU DEVELOPER INFO
+   ================================ */
+.about-dev-card {
+    background: var(--card-bg);
+    border-radius: var(--card-radius);
+    padding: 44px 36px 44px 36px;
+    color: var(--primary-text);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 2px 12px rgba(20,20,20,0.10);
+}
+.about-title {
+    font-size: 1.56rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.about-name {
+    font-size: 1.22rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+.about-desc {
+    font-size: 1.08rem;
+    font-weight: 400;
+    opacity: 0.95;
+    margin-bottom: 8px;
+}
+.about-section-title {
+    font-size: 1.16rem;
+    font-weight: 700;
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+/* List skill developer */
+.about-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 6px;
+}
+.chip {
+    font-size: 1.01rem;
+    font-weight: 700;
+    background: var(--chip-bg);
+    color: var(--primary-text);
+    padding: 12px 26px;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    user-select: none;
+    box-shadow: 0 1px 6px rgba(90,60,120,0.06);
+}
+.chip:hover {
+    background: var(--yellow);
+    color: var(--secondary-text);
+    box-shadow: 0 2px 12px rgba(220,180,20,0.14);
+}
+
+/* ================================
+    KARTU PROFIL GITHUB (KANAN ATAS)
+   ================================ */
+.about-profile-card {
+    background: var(--card-bg);
+    border-radius: var(--card-radius);
+    box-shadow: 0 2px 12px rgba(20,20,20,0.10);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px;
+    min-height: 220px;
+    gap: 38px;
+}
+.profile-card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    flex: 1;
+}
+.about-github {
+    font-size: 2.18rem;
+    font-weight: 700;
+    color: var(--primary-text);
+    margin-bottom: 0;
+    margin-left: 20px;
+    text-align: left;
+}
+.about-github-btn {
+    display: inline-block;
+    padding: 18px 40px;
+    font-size: 1.09rem;
+    font-weight: 700;
+    background: var(--yellow);
+    color: var(--secondary-text);
+    border-radius: 26px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    border: none;
+}
+.about-github-btn:hover {
+    background: var(--chip-bg);
+    color: var(--primary-text);
+    box-shadow: 0 2px 10px rgba(100,120,220,0.14);
+}
+.profile-img-square {
+    width: 250px;
+    height: 250px;
+    background: var(--chip-bg);
+    border-radius: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-text);
+    font-size: 1.37rem;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(120,100,210,0.10);
+}
+.profile-img-actual {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+    background: #222;
+}
+
+/* ================================
+    TAB BAWAH: VISITOR & LOGO TECH
+   ================================ */
+.about-bottom-tab {
+    background: var(--card-bg);
+    border-radius: var(--card-radius);
+    padding: 38px 40px 38px 40px;
+    box-shadow: 0 2px 12px rgba(20,20,20,0.10);
+}
+.about-bottom-grid {
+    display: grid;
+    grid-template-columns: 2.4fr 1fr 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+}
+/* Kartu visitor count */
+.visitor-card {
+    background: var(--yellow);
+    color: var(--secondary-text);
+    border-radius: var(--card-radius);
+    font-size: 3.25rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 38px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(190,140,20,0.10);
+    height: 138px;
+}
+.visitor-count {
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-right: 8px;
+}
+/* Kartu logo teknologi/stack */
+.logo-card {
+    background: var(--chip-bg);
+    border-radius: var(--card-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 0 0 0;
+    box-shadow: 0 2px 10px rgba(120,100,210,0.10);
+    height: 196px;
+}
+.logo-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 18px;
+    object-fit: cover;
+    margin-bottom: 12px;
+    background: #222;
+}
+
+/* ================================
+        EFEK MOUSE TRAIL BINTANG
+   ================================ */
+.star {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+.star:before, .star:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '\2726';
+    font-size: 9px;
+}
+.star:before {
+    color: transparent;
+    text-shadow:
+        0 0 3px #FAFAFA,
+        0 0 6px #FBBF24,
+        0 0 20px #A855F7,
+        0 0 10px #FAFAFA;
+}
+.star:after {
+    background: linear-gradient(135deg, #A855F7 0%, #FBBF24 75%, #0D0A1B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}

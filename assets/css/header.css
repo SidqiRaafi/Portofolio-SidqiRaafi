@@ -1,0 +1,63 @@
+/* ================================
+        VARIABEL WARNA NAVBAR
+   ================================ */
+:root {
+    --secondary-chips: #A855F7;
+    --primary-chips: #FBBF24;
+    --primary-text: #FAFAFA;
+    --secondary-text: #0D0A1B;
+}
+
+/* ================================
+            NAVBAR UTAMA
+   ================================ */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 34px 34px 0 34px;
+    gap: 33px;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* ================================
+            LINK NAVIGASI
+   ================================ */
+.nav-link {
+    background: var(--secondary-chips);
+    color: var(--primary-text);
+    font-weight: 600;
+    font-size: 1.08rem;
+    padding: 14px 34px;
+    border: none;
+    border-radius: 28px;
+    text-decoration: none;
+    margin-right: 0;
+    transition: background 0.2s, color 0.2s;
+    letter-spacing: 1px;
+}
+/* Link aktif dan CONTACT (warna kuning) */
+.nav-link.active,
+.nav-link.contact {
+    background: var(--primary-chips);
+    color: var(--secondary-text);
+}
+/* CONTACT link diposisikan di ujung kanan */
+.nav-link.contact {
+    margin-left: auto;
+}
+
+/* ================================
+        STATE HOVER NAVIGASI
+   ================================ */
+/* Hover untuk link aktif & CONTACT -> ungu */
+.nav-link.active:hover,
+.nav-link.contact:hover {
+    background: var(--secondary-chips);
+    color: var(--primary-text);
+}
+/* Hover untuk link inactive -> kuning */
+.nav-link.inactive:hover {
+    background: var(--primary-chips);
+    color: var(--secondary-text);
+}
